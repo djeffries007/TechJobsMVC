@@ -27,7 +27,7 @@ namespace TechJobs.Controllers
             else
             {
                 jobs = JobData.FindByColumnAndValue(searchType, searchTerm);
-                ViewBag.title = "Search in " + searchType + ": " + searchTerm;
+                ViewBag.title = "Search in  " + searchType + ": " + searchTerm;
             }
             ViewBag.jobs = jobs;
             ViewBag.columns = ListController.columnChoices;
